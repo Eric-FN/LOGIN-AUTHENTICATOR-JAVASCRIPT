@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="main.html">Home</a>
+        <a href="user.html">User Info</a>
+        <div class="logged-user"></div>
+        <button class="login-button">Login</button>
+        <button class="logout-button">Logout</button>
+      </header>
+      <h1>User Information</h1>
+      <div class="user-info">
+        <h3 class="username"></h3>
+        <company></company>
+        <address>
+          <h3 class="mail"></h3>
+          <h3 class="nome"></h3>
+          <h3 class="phone"></h3>
+          <h3 class="website"></h3>
+        </address>
+      </div>
+      <div class="message"></div>
+    </main>
+
+    <script src="user.js"></script>
+    <script src="header.js"></script>
+
+    <script>
+      window.onload = () => {
+        setloggedUserHeader();
+        setloggedUserPage();
+      };
+    </script>
+  </body>
+</html>
